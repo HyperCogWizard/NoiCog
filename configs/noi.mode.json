@@ -160,6 +160,12 @@
       "url": "https://suno.com"
     },
     {
+      "id": "noi:opencog",
+      "parent": "noi@ai",
+      "text": "OpenCog Dashboard",
+      "url": "http://localhost:8080"
+    },
+    {
       "id": "noi:github",
       "parent": "noi@dev",
       "text": "GitHub",

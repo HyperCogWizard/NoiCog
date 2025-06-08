@@ -32,7 +32,10 @@
         "https://jimeng.jianying.com/*",
         "https://chat.deepseek.com/*",
         "https://metaso.cn/*",
-        "https://yuanbao.tencent.com/*"
+        "https://yuanbao.tencent.com/*",
+        "http://localhost:8080/*",
+        "http://localhost:17020/*",
+        "https://opencog-dashboard.local/*"
       ],
       "js": ["main.js"],
       "run_at": "document_end",

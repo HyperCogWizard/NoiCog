@@ -18,7 +18,7 @@
 
 Introducing Noi: an AI-enhanced, customizable browser designed to streamline your digital experience:
 
-**AI Support: [ChatGPT](https://chatgpt.com), [Claude](https://claude.ai), [Gemini](https://gemini.google.com), [Grok](https://grok.com), [DeepSeek](https://chat.deepseek.com), [GitHub Copilot](https://github.com/copilot), [HuggingChat](https://huggingface.co/chat), and more.**
+**AI Support: [ChatGPT](https://chatgpt.com), [Claude](https://claude.ai), [Gemini](https://gemini.google.com), [Grok](https://grok.com), [DeepSeek](https://chat.deepseek.com), [GitHub Copilot](https://github.com/copilot), [HuggingChat](https://huggingface.co/chat), [OpenCog](http://localhost:8080), and more.**
 
 - **Browser**: Noi not only includes curated AI websites but also allows the addition of any URL, providing a tailored browsing experience ([Noi Configs](./configs)).
 - **Prompts Management**: Offers robust customization options including the addition, synchronization, batch tagging, and removal of prompts.
@@ -113,6 +113,7 @@ Learn more: [electronjs/doc](https://www.electronjs.org/docs/latest/api/extensio
 | [@noi/ask](https://github.com/lencx/Noi/tree/main/extensions/noi-ask) | 0.2.1 | The best assistant for batch asking and quick typing of prompts. |
 | [@noi/ask-custom](https://github.com/lencx/Noi/tree/main/extensions/noi-ask-custom) | 0.1.0 | The best assistant for batch asking and quick typing of prompts. |
 | [@noi/reset](https://github.com/lencx/Noi/tree/main/extensions/noi-reset) | 0.1.3 | Reset certain website styles to enhance compatibility with Noi. |
+| [@noi/opencog-dashboard](https://github.com/HyperCogWizard/NoiCog/tree/main/extensions/noi-opencog-dashboard) | 0.1.0 | OpenCog dashboard for monitoring and interacting with OpenCog instances. |
 <!-- EXTENSIONS_END -->
 
 [![Star History Chart](https://api.star-history.com/svg?repos=lencx/Noi&type=Timeline)](https://star-history.com/#lencx/Noi&Timeline)

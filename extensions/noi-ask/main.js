@@ -455,6 +455,31 @@ class YuanbaoAsk extends NoiAsk {
   }
 }
 
+class OpenCogAsk extends NoiAsk {
+  static name = 'OpenCog Dashboard';
+  static url = 'http://localhost:8080';
+
+  static sync(message) {
+    const commandInput = document.querySelector('#scheme-command');
+    if (commandInput) {
+      commandInput.focus();
+      commandInput.value = message;
+      const inputEvent = new InputEvent('input', {
+        bubbles: true,
+        cancelable: true,
+      });
+      commandInput.dispatchEvent(inputEvent);
+    }
+  }
+
+  static submit() {
+    const executeBtn = document.querySelector('#execute-btn');
+    if (executeBtn && !executeBtn.disabled) {
+      executeBtn.click();
+    }
+  }
+}
+
 window.NoiAsk = {
   OpenAIAsk,
   ClaudeAsk,
@@ -482,4 +507,5 @@ window.NoiAsk = {
   DeepSeekAsk,
   MetasoAsk,
   YuanbaoAsk,
+  OpenCogAsk,
 };
