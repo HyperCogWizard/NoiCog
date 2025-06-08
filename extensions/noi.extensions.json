@@ -25,6 +25,14 @@
       "url": "https://github.com/lencx/Noi/tree/main/extensions/noi-reset",
       "dirname": "noi-reset",
       "disabled": false
+    },
+    {
+      "name": "@noi/opencog-dashboard",
+      "description": "OpenCog dashboard for monitoring and interacting with OpenCog instances.",
+      "version": "0.1.0",
+      "url": "https://github.com/HyperCogWizard/NoiCog/tree/main/extensions/noi-opencog-dashboard",
+      "dirname": "noi-opencog-dashboard",
+      "disabled": false
     }
   ]
 }
