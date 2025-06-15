@@ -47,6 +47,18 @@ Introducing Noi: an AI-enhanced, customizable browser designed to streamline you
 |![theme-light-1](./website/static/readme/noi-theme-light-1.png)|![theme-light-2](./website/static/readme/noi-theme-light-2.png)|
 |![noi-settings](./website/static/readme/noi-settings.png)|![noi-prompts](./website/static/readme/noi-prompts.png)|
 
+## 🏗️ Architecture Documentation
+
+[📁 docs/architecture](./docs/architecture)
+
+Comprehensive architecture documentation with Mermaid diagrams illustrating the cognitive and technical architecture of the NoiCog system:
+
+- **[System Overview](./docs/architecture/system-overview.md)** - High-level architecture and principal components
+- **[Extension Architecture](./docs/architecture/extension-architecture.md)** - Plugin system design and module interactions
+- **[OpenCog Integration](./docs/architecture/opencog-integration.md)** - Cognitive subsystem and neural-symbolic integration  
+- **[Data Flow Patterns](./docs/architecture/data-flow-patterns.md)** - Signal propagation and information flow pathways
+- **[Recursive Implementation](./docs/architecture/recursive-implementation.md)** - Emergent patterns and adaptive mechanisms
+
 ## ⚙️ Noi Configs
 
 [📁 configs](./configs)
