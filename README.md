@@ -116,6 +116,17 @@ Learn more: [electronjs/doc](https://www.electronjs.org/docs/latest/api/extensio
 | [@noi/opencog-dashboard](https://github.com/HyperCogWizard/NoiCog/tree/main/extensions/noi-opencog-dashboard) | 0.1.0 | OpenCog dashboard for monitoring and interacting with OpenCog instances. |
 <!-- EXTENSIONS_END -->
 
+## 🏗️ Architecture Documentation
+
+NoiCog features comprehensive architecture documentation with interactive Mermaid diagrams that illustrate the system's recursive, emergent cognitive architecture:
+
+- **[📁 Complete Architecture Documentation](./docs/)**: Comprehensive documentation index
+- **[🧠 System Architecture](./docs/ARCHITECTURE.md)**: Core cognitive architecture with hypergraph-centric design patterns
+- **[🔌 Extension Architecture](./docs/EXTENSION_ARCHITECTURE.md)**: Modular cognitive kernels and NoiAsk patterns
+- **[🤖 OpenCog Integration](./docs/OPENCOG_INTEGRATION.md)**: Neural-symbolic bridge and AtomSpace visualization
+
+The documentation includes adaptive attention allocation mechanisms, recursive implementation pathways, and emergent behavior synthesis patterns through interactive Mermaid diagrams.
+
 [![Star History Chart](https://api.star-history.com/svg?repos=lencx/Noi&type=Timeline)](https://star-history.com/#lencx/Noi&Timeline)
 
 # 🌐 Noi Languages
