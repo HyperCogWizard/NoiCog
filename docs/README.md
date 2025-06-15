@@ -56,6 +56,22 @@ Detailed analysis of the neural-symbolic bridge and AtomSpace interaction patter
 - AtomSpace visualization
 - Cognitive state management
 
+#### [Documentation Evolution Framework](./EVOLUTION_FRAMEWORK.md)
+Establishes iterative feedback loops for emergent documentation improvements and adaptive pattern recognition.
+
+**Key Mermaid Diagrams:**
+- Recursive documentation improvement cycles
+- Emergent pattern documentation lifecycle
+- Community-driven evolution processes
+- Quality assurance automation
+- Meta-documentation intelligence
+
+**Covered Topics:**
+- Automatic pattern discovery
+- Community-driven evolution
+- AI-assisted content generation
+- Adaptive documentation intelligence
+
 ## Architecture Visualization Patterns
 
 ### Diagram Classification System
@@ -251,5 +267,6 @@ Documentation quality measured through:
 | System Overview | Graph TD | Core architecture, component relationships | [ARCHITECTURE.md](./ARCHITECTURE.md) |
 | Extension System | Graph LR + Class Diagrams | NoiAsk patterns, distributed processing | [EXTENSION_ARCHITECTURE.md](./EXTENSION_ARCHITECTURE.md) |
 | OpenCog Integration | Sequence + State Diagrams | Neural-symbolic bridge, AtomSpace | [OPENCOG_INTEGRATION.md](./OPENCOG_INTEGRATION.md) |
+| Evolution Framework | State + Sequence Diagrams | Adaptive documentation, feedback loops | [EVOLUTION_FRAMEWORK.md](./EVOLUTION_FRAMEWORK.md) |
 | Cognitive Flows | State Diagrams | Adaptive attention, emergent behaviors | All documents |
 | Implementation Patterns | Class Diagrams | Code structure, interface definitions | [EXTENSION_ARCHITECTURE.md](./EXTENSION_ARCHITECTURE.md) |
