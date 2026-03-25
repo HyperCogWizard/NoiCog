@@ -6,6 +6,7 @@
 
 const NOI_CONTEXT_KEY = 'noi_context_store';
 const NOI_CONTEXT_MAX = 20; // maximum stored context entries
+const MIN_AUTO_CAPTURE_LENGTH = 40; // minimum response chars for auto-capture
 
 // ---------------------------------------------------------------------------
 // Context Store — persisted in localStorage
@@ -316,7 +317,7 @@ function setupAutoCapture(panel) {
   let lastCaptured = '';
   const observer = new MutationObserver(() => {
     const response = adapter.getLastResponse();
-    if (response && response !== lastCaptured && response.length > 40) {
+    if (response && response !== lastCaptured && response.length > MIN_AUTO_CAPTURE_LENGTH) {
       lastCaptured = response;
       // Store passively without UI flash — user can review in panel
       const query = adapter.getLastQuery();

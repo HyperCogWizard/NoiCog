@@ -6,6 +6,9 @@
 
 const NOI_METACOG_KEY = 'noi_metacog_events';
 const NOI_METACOG_MAX = 200;
+const DASHBOARD_UPDATE_INTERVAL_MS = 5000;
+const RESPONSE_END_DEBOUNCE_MS = 800;
+const COGNITIVE_LOAD_MAX_QUERIES = 10; // queries in 5 min = 100% load
 
 // ---------------------------------------------------------------------------
 // Service identity resolution
@@ -155,7 +158,7 @@ class QueryInstrument {
     let debounce = null;
     const observer = new MutationObserver(() => {
       clearTimeout(debounce);
-      debounce = setTimeout(() => this._onPossibleResponseEnd(), 800);
+      debounce = setTimeout(() => this._onPossibleResponseEnd(), RESPONSE_END_DEBOUNCE_MS);
     });
     observer.observe(document.body, { childList: true, subtree: true, characterData: true });
   }
@@ -265,7 +268,7 @@ class MetaCogDashboard {
     this.panel.classList.add('visible');
     this.visible = true;
     this.render();
-    this._updateInterval = setInterval(() => this.render(), 5000);
+    this._updateInterval = setInterval(() => this.render(), DASHBOARD_UPDATE_INTERVAL_MS);
   }
 
   hide() {
@@ -324,7 +327,7 @@ class MetaCogDashboard {
       const window5m = events.filter(e =>
         e.type === 'query_start' && (now - new Date(e.timestamp).getTime()) < 5 * 60 * 1000
       ).length;
-      const loadPct = Math.min(100, window5m * 10); // 10 queries = 100%
+      const loadPct = Math.min(100, window5m * (100 / COGNITIVE_LOAD_MAX_QUERIES));
       const loadLabel = loadPct < 20 ? 'Low' : loadPct < 60 ? 'Moderate' : 'High';
       const loadColor = loadPct < 20 ? '#4caf50' : loadPct < 60 ? '#ff9800' : '#e53935';
       loadEl.innerHTML = `
