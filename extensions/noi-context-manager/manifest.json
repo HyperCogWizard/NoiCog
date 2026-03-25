@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "@noi/context-manager",
+  "version": "0.1.0",
+  "homepage": "https://github.com/HyperCogWizard/NoiCog/tree/main/extensions/noi-context-manager",
+  "description": "Advanced context awareness: captures AI responses and maintains cross-service conversation context.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://gemini.google.com/*",
+        "https://grok.com/*",
+        "https://claude.ai/*",
+        "https://huggingface.co/chat/*",
+        "https://www.perplexity.ai/*",
+        "https://copilot.microsoft.com/*",
+        "https://chat.groq.com/*",
+        "https://chat.mistral.ai/chat/*",
+        "https://chat.deepseek.com/*",
+        "https://github.com/copilot/*",
+        "http://localhost:8080/*",
+        "http://localhost:17020/*",
+        "https://opencog-dashboard.local/*"
+      ],
+      "js": ["main.js"],
+      "css": ["styles.css"],
+      "run_at": "document_end",
+      "world": "MAIN"
+    }
+  ]
+}

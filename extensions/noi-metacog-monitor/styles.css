@@ -1,0 +1,191 @@
+/* Noi Meta-Cognitive Monitor — Dashboard Styles */
+
+#noi-metacog-launcher {
+  position: fixed;
+  bottom: 78px;
+  right: 24px;
+  z-index: 2147483646;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: #0f3460;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#noi-metacog-launcher:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+}
+
+#noi-metacog-panel {
+  position: fixed;
+  bottom: 132px;
+  right: 24px;
+  z-index: 2147483645;
+  width: 360px;
+  max-height: 480px;
+  background: #1a1a2e;
+  color: #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  display: none;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 13px;
+  overflow: hidden;
+}
+
+#noi-metacog-panel.visible {
+  display: flex;
+}
+
+.nmm-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: #16213e;
+  border-bottom: 1px solid #0f3460;
+  font-weight: 600;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.nmm-header-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.nmm-header-actions button {
+  background: #0f3460;
+  border: none;
+  color: #e0e0e0;
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 0.15s;
+}
+
+.nmm-header-actions button:hover {
+  background: #533483;
+}
+
+.nmm-body {
+  overflow-y: auto;
+  padding: 12px;
+  flex: 1;
+}
+
+.nmm-section {
+  margin-bottom: 12px;
+}
+
+.nmm-section-title {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #888;
+  margin: 10px 0 6px;
+}
+
+.nmm-stat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 8px;
+}
+
+.nmm-stat {
+  background: #16213e;
+  border-radius: 8px;
+  padding: 8px 6px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.nmm-val {
+  font-size: 16px;
+  font-weight: 700;
+  color: #c084fc;
+}
+
+.nmm-lbl {
+  font-size: 10px;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.nmm-since {
+  color: #666;
+  font-size: 11px;
+  text-align: right;
+  margin-top: 6px;
+}
+
+.nmm-empty {
+  color: #666;
+  font-size: 12px;
+  text-align: center;
+  padding: 12px 0;
+}
+
+.nmm-svc-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  background: #16213e;
+  border-radius: 6px;
+  margin-bottom: 4px;
+}
+
+.nmm-svc-name {
+  background: #0f3460;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 11px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.nmm-svc-stat {
+  color: #aaa;
+  font-size: 12px;
+}
+
+.nmm-svc-err {
+  color: #e53935;
+  font-size: 11px;
+  font-weight: 600;
+  margin-left: auto;
+}
+
+.nmm-load-label {
+  color: #ccc;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.nmm-load-bar-track {
+  background: #16213e;
+  border-radius: 4px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.nmm-load-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.4s ease, background 0.4s ease;
+}

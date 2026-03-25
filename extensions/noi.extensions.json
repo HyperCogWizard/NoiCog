@@ -33,6 +33,22 @@
       "url": "https://github.com/HyperCogWizard/NoiCog/tree/main/extensions/noi-opencog-dashboard",
       "dirname": "noi-opencog-dashboard",
       "disabled": false
+    },
+    {
+      "name": "@noi/context-manager",
+      "description": "Advanced context awareness: captures AI responses and maintains cross-service conversation context.",
+      "version": "0.1.0",
+      "url": "https://github.com/HyperCogWizard/NoiCog/tree/main/extensions/noi-context-manager",
+      "dirname": "noi-context-manager",
+      "disabled": false
+    },
+    {
+      "name": "@noi/metacog-monitor",
+      "description": "Meta-cognitive monitoring: tracks query patterns, response metrics, and cognitive load across AI services.",
+      "version": "0.1.0",
+      "url": "https://github.com/HyperCogWizard/NoiCog/tree/main/extensions/noi-metacog-monitor",
+      "dirname": "noi-metacog-monitor",
+      "disabled": false
     }
   ]
 }

@@ -9,6 +9,8 @@
 | **OpenCog Integration** | [📖 View](./opencog-integration.md) | AtomSpace, neural-symbolic bridge, cognitive processing |
 | **Data Flow** | [📖 View](./data-flow-patterns.md) | Signal propagation, information pathways, context awareness |
 | **Recursive Patterns** | [📖 View](./recursive-implementation.md) | Self-modification, emergent intelligence, adaptive mechanisms |
+| **Context Manager** | [📖 View](../../extensions/noi-context-manager/README.md) | Cross-service context capture, injection, localStorage persistence |
+| **Meta-Cog Monitor** | [📖 View](../../extensions/noi-metacog-monitor/README.md) | Query metrics, latency tracking, cognitive load heuristics |
 
 ## Mermaid Diagram Types Used
 
@@ -61,17 +63,17 @@ Multiple AI services working in coordination to achieve collective intelligence 
 - [x] Basic AI service integration
 - [x] OpenCog dashboard interface
 
-### **Phase 2: Cognitive Enhancement** 🚧
+### **Phase 2: Cognitive Enhancement** ✅
 - [x] Batch processing system (NoiAsk)
 - [x] AtomSpace integration
 - [x] Multi-service coordination
-- [ ] Advanced context awareness
+- [x] Advanced context awareness ([noi-context-manager](../../extensions/noi-context-manager))
 
-### **Phase 3: Recursive Intelligence** 🔄
+### **Phase 3: Recursive Intelligence** 🚧
 - [ ] Self-modification capabilities
 - [ ] Emergent goal generation
 - [ ] Adaptive architecture evolution
-- [ ] Meta-cognitive monitoring
+- [x] Meta-cognitive monitoring ([noi-metacog-monitor](../../extensions/noi-metacog-monitor))
 
 ### **Phase 4: Transcendent Capabilities** 🚀
 - [ ] Consciousness emergence patterns
